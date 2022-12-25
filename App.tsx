@@ -17,32 +17,40 @@ export default function App() {
   return (
     <SafeAreaView>
       <ScrollView>
-        <Text className="text-xs font-sans">Font (xs)</Text>
-        <Text style={{ fontSize: 12, lineHeight: 16 }}>Font (xs) - custom</Text>
-        <Text className="text-sm font-sans">Font (sm)</Text>
-        <Text style={{ fontSize: 14, lineHeight: 20 }}>Font (sm) - custom</Text>
-        <Text className="text-base font-sans">Font (base)</Text>
-        <Text style={{ fontSize: 16, lineHeight: 24 }}>Font (base) - custom</Text>
-        <Text className="text-lg font-sans">Font (lg)</Text>
-        <Text style={{ fontSize: 18, lineHeight: 28 }}>Font (lg) - custom</Text>
-        <Text className="text-xl font-sans">Font (xl)</Text>
-        <Text style={{ fontSize: 20, lineHeight: 28 }}>Font (xl) - custom</Text>
-        <Text className="text-2xl font-sans">Font (2xl)</Text>
-        <Text style={{ fontSize: 24, lineHeight: 32 }}>Font (2xl) - custom</Text>
-        <Text className="text-3xl font-sans">Font (3xl)</Text>
-        <Text style={{ fontSize: 30, lineHeight: 36 }}>Font (3xl) - custom</Text>
-        <Text className="text-4xl font-sans">Font (4xl)</Text>
-        <Text style={{ fontSize: 36, lineHeight: 40 }}>Font (4xl) - custom</Text>
-        <Text className="text-5xl font-sans">Font (5xl)</Text>
-        <Text style={{ fontSize: 48, lineHeight: 48 }}>Font (5xl) - custom</Text>
-        <Text className="text-6xl font-sans">Font (6xl)</Text>
-        <Text style={{ fontSize: 60, lineHeight: 60 }}>Font (6xl) - custom</Text>
-        <Text className="text-7xl font-sans">Font (7xl)</Text>
-        <Text style={{ fontSize: 72, lineHeight: 72 }}>Font (7xl) - custom</Text>
-        <Text className="text-8xl font-sans">Font (8xl)</Text>
-        <Text style={{ fontSize: 96, lineHeight: 96 }}>Font (8xl) - custom</Text>
-        <Text className="text-9xl font-sans">Font (9xl)</Text>
-        <Text style={{ fontSize: 128, lineHeight: 128 }}>Font (9xl) - custom</Text>
+        <Text className="text-base text-white-1 p-2 text-center bg-main-1-dark">Dark theme</Text>
+        <View className="flex flex-col h-screen bg-gray-1-dark p-2">
+          <Text className="text-base font-sans text-main-1-dark">Typography</Text>
+          <Text className="text-xs font-sans text-white-1">Font (xs)</Text>
+          <Text className="text-sm font-sans text-white-1">Font (sm)</Text>
+          <Text className="text-base font-sans text-white-1">Font (base)</Text>
+          <Text className="text-lg font-sans text-white-1">Font (lg)</Text>
+          <Text className="text-xl font-sans text-white-1">Font (xl)</Text>
+          <Text className="text-2xl font-sans text-white-1">Font (2xl)</Text>
+          <Text className="text-3xl font-sans text-white-1">Font (3xl)</Text>
+          <Text className="text-4xl font-sans text-white-1">Font (4xl)</Text>
+          <Text className="text-5xl font-sans text-white-1">Font (5xl)</Text>
+          <Text className="text-6xl font-sans text-white-1">Font (6xl)</Text>
+          <Text className="text-7xl font-sans text-white-1">Font (7xl)</Text>
+          <Text className="text-8xl font-sans text-white-1">Font (8xl)</Text>
+          <Text className="text-9xl font-sans text-white-1">Font (9xl)</Text>
+        </View>
+        <Text className="text-base text-white-1 p-2 text-center bg-main-1-light">Light theme</Text>
+        <View className="flex flex-col h-screen bg-gray-1-light p-2">
+          <Text className="text-base font-sans text-main-1-light">Typography</Text>
+          <Text className="text-xs font-sans text-black-1">Font (xs)</Text>
+          <Text className="text-sm font-sans text-black-1">Font (sm)</Text>
+          <Text className="text-base font-sans text-black-1">Font (base)</Text>
+          <Text className="text-lg font-sans text-black-1">Font (lg)</Text>
+          <Text className="text-xl font-sans text-black-1">Font (xl)</Text>
+          <Text className="text-2xl font-sans text-black-1">Font (2xl)</Text>
+          <Text className="text-3xl font-sans text-black-1">Font (3xl)</Text>
+          <Text className="text-4xl font-sans text-black-1">Font (4xl)</Text>
+          <Text className="text-5xl font-sans text-black-1">Font (5xl)</Text>
+          <Text className="text-6xl font-sans text-black-1">Font (6xl)</Text>
+          <Text className="text-7xl font-sans text-black-1">Font (7xl)</Text>
+          <Text className="text-8xl font-sans text-black-1">Font (8xl)</Text>
+          <Text className="text-9xl font-sans text-black-1">Font (9xl)</Text>
+        </View>
         <StatusBar style="auto" />
       </ScrollView>
     </SafeAreaView>
