@@ -1232,7 +1232,7 @@
     xcode "^3.0.0"
     xml-js "^1.6.11"
 
-"@expo/dev-server@0.1.123", "@expo/dev-server@^0.1.123":
+"@expo/dev-server@0.1.123":
   version "0.1.123"
   resolved "https://registry.yarnpkg.com/@expo/dev-server/-/dev-server-0.1.123.tgz#71304323b47db9ce300b9a774571ef2312b9d581"
   integrity sha512-N6UVzzeemfX0AONUSWInvkAAbqon8hRXpyYE/nMPaC6TvAmgGY5ILZAGoXwlpxwY2VKNT0Lx4s/UJ53ytIaHbA==
