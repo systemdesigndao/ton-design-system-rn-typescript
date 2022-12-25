@@ -17,11 +17,11 @@ export default function App() {
   return (
     <SafeAreaView>
       <ScrollView>
-        <Text className="text-xs">Font (xs)</Text>
+        <Text className="text-xs font-sans">Font (xs)</Text>
         <Text style={{ fontSize: 12, lineHeight: 16 }}>Font (xs) - custom</Text>
-        <Text className="text-sm">Font (sm)</Text>
+        <Text className="text-sm font-sans">Font (sm)</Text>
         <Text style={{ fontSize: 14, lineHeight: 20 }}>Font (sm) - custom</Text>
-        <Text className="text-base">Font (base)</Text>
+        <Text className="text-base font-sans">Font (base)</Text>
         <Text style={{ fontSize: 16, lineHeight: 24 }}>Font (base) - custom</Text>
         <Text className="text-lg font-sans">Font (lg)</Text>
         <Text style={{ fontSize: 18, lineHeight: 28 }}>Font (lg) - custom</Text>
