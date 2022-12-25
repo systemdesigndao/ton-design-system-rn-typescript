@@ -1107,6 +1107,11 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
+"@designervoid/ton-design-system@^1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@designervoid/ton-design-system/-/ton-design-system-1.0.10.tgz#ea1c5230d07c22770e7fd050fbd9cf60dc06888e"
+  integrity sha512-VjRGoFDwY2pAzoeBjWb0M5fF7J9c2Uk2dpUzwBSUVIS+o45r57CXZBBcGcA9N7HOLyMTgcS6JQvSpg/GnefEJA==
+
 "@expo/bunyan@4.0.0", "@expo/bunyan@^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@expo/bunyan/-/bunyan-4.0.0.tgz#be0c1de943c7987a9fbd309ea0b1acd605890c7b"
