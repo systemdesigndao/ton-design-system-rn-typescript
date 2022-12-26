@@ -1,75 +1,107 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * Generated with the TypeScript template
- * https://github.com/react-native-community/react-native-template-typescript
- *
- * @format
- */
+import React from 'react';
+import {SafeAreaView, ScrollView, Text, TextInput, View} from 'react-native';
+import {useFonts} from 'expo-font';
 
-import React, {type PropsWithChildren} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+export default function App() {
+  const [fontsLoaded] = useFonts({
+    'Mulish-Black': require('./src/assets/fonts/Mulish/Mulish-Black.ttf'), // 700
+    'Mulish-Regular': require('./src/assets/fonts/Mulish/Mulish-Regular.ttf'),
+  });
 
-import {
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-const Section: React.FC<
-  PropsWithChildren<{
-    title: string;
-  }>
-> = ({children, title}) => {
-  return (
-    <View className="mt-8 px-2">
-      <Text className="text-2xl text-black dark:text-white">{title}</Text>
-      <Text className="mt-2 text-lg text-black dark:text-white">
-        {children}
-      </Text>
-    </View>
-  );
-};
-
-const App = () => {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = 'bg-neutral-300 dark:bg-slate-900';
+  if (!fontsLoaded) {
+    return null;
+  }
 
   return (
-    <SafeAreaView className={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        className={backgroundStyle}>
-        <Header />
-        <View className="bg-white dark:bg-black">
-          <Section title="Step One">
-            Edit <Text className="font-bold">App.js</Text>
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
+    <SafeAreaView>
+      <ScrollView>
+        <Text className="text-base text-white-1 p-2 text-center bg-main-1-dark font-bold">
+          Dark theme
+        </Text>
+        <View className="flex flex-col h-fit bg-gray-1-dark p-2">
+          <Text className="text-base font-regular text-main-1-dark py-2">
+            Typography
+          </Text>
+          <Text className="text-xs font-regular text-white-1">Font (xs)</Text>
+          <Text className="text-sm font-regular text-white-1">Font (sm)</Text>
+          <Text className="text-base font-regular text-white-1">
+            Font (base)
+          </Text>
+          <Text className="text-lg font-regular text-white-1">Font (lg)</Text>
+          <Text className="text-xl font-regular text-white-1">Font (xl)</Text>
+          <Text className="text-2xl font-regular text-white-1">Font (2xl)</Text>
+          <Text className="text-3xl font-regular text-white-1">Font (3xl)</Text>
+          <Text className="text-4xl font-regular text-white-1">Font (4xl)</Text>
+          <Text className="text-5xl font-regular text-white-1">Font (5xl)</Text>
+          <Text className="text-6xl font-regular text-white-1">Font (6xl)</Text>
+          <Text className="text-7xl font-regular text-white-1">Font (7xl)</Text>
+          <Text className="text-8xl font-regular text-white-1">Font (8xl)</Text>
+          <Text className="text-9xl font-regular text-white-1">Font (9xl)</Text>
+          <Text className="text-base font-regular text-main-1-dark py-2">
+            Inputs
+          </Text>
+          <TextInput
+            className="
+            form-control
+            block
+            w-full
+            px-3
+            py-3
+            font-normal
+            text-white-1
+            bg-white bg-clip-padding
+            border border-solid border-gray-300
+            rounded
+            transition
+            ease-in-out
+            m-0
+            focus:bg-white focus:border-main-1-dark focus:outline-none"
+          />
+        </View>
+        <Text className="text-base text-white-1 p-2 text-center bg-main-1-light font-bold">
+          Light theme
+        </Text>
+        <View className="flex flex-col h-fit bg-gray-1-light p-2">
+          <Text className="text-base font-regular text-main-1-light py-2">
+            Typography
+          </Text>
+          <Text className="text-xs font-regular text-black-1">Font (xs)</Text>
+          <Text className="text-sm font-regular text-black-1">Font (sm)</Text>
+          <Text className="text-base font-regular text-black-1">
+            Font (base)
+          </Text>
+          <Text className="text-lg font-regular text-black-1">Font (lg)</Text>
+          <Text className="text-xl font-regular text-black-1">Font (xl)</Text>
+          <Text className="text-2xl font-regular text-black-1">Font (2xl)</Text>
+          <Text className="text-3xl font-regular text-black-1">Font (3xl)</Text>
+          <Text className="text-4xl font-regular text-black-1">Font (4xl)</Text>
+          <Text className="text-5xl font-regular text-black-1">Font (5xl)</Text>
+          <Text className="text-6xl font-regular text-black-1">Font (6xl)</Text>
+          <Text className="text-7xl font-regular text-black-1">Font (7xl)</Text>
+          <Text className="text-8xl font-regular text-black-1">Font (8xl)</Text>
+          <Text className="text-9xl font-regular text-black-1">Font (9xl)</Text>
+          <Text className="text-base font-regular text-main-1-light py-2">
+            Inputs
+          </Text>
+          <TextInput
+            className="
+            form-control
+            block
+            w-full
+            px-3
+            py-3
+            font-normal
+            text-black-1
+            bg-white bg-clip-padding
+            border border-solid border-gray-300
+            rounded
+            transition
+            ease-in-out
+            m-0
+            focus:bg-white focus:border-main-1-light focus:outline-none"
+          />
         </View>
       </ScrollView>
     </SafeAreaView>
   );
-};
-
-export default App;
+}
