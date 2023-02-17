@@ -17,39 +17,15 @@ export default function App() {
   return (
     <SafeAreaView>
       <ScrollView>
-        <Text className="text-base text-white-1 p-2 text-center bg-main-1-dark">Dark theme</Text>
-        <View className="flex flex-col h-screen bg-gray-1-dark p-2">
-          <Text className="text-base font-sans text-main-1-dark">Typography</Text>
-          <Text className="text-xs font-sans text-white-1">Font (xs)</Text>
-          <Text className="text-sm font-sans text-white-1">Font (sm)</Text>
-          <Text className="text-base font-sans text-white-1">Font (base)</Text>
-          <Text className="text-lg font-sans text-white-1">Font (lg)</Text>
-          <Text className="text-xl font-sans text-white-1">Font (xl)</Text>
-          <Text className="text-2xl font-sans text-white-1">Font (2xl)</Text>
-          <Text className="text-3xl font-sans text-white-1">Font (3xl)</Text>
-          <Text className="text-4xl font-sans text-white-1">Font (4xl)</Text>
-          <Text className="text-5xl font-sans text-white-1">Font (5xl)</Text>
-          <Text className="text-6xl font-sans text-white-1">Font (6xl)</Text>
-          <Text className="text-7xl font-sans text-white-1">Font (7xl)</Text>
-          <Text className="text-8xl font-sans text-white-1">Font (8xl)</Text>
-          <Text className="text-9xl font-sans text-white-1">Font (9xl)</Text>
+        <Text className="text-base text-white-1 p-2 text-center bg-main-dark-5">Dark theme</Text>
+        <View className="flex flex-col h-screen bg-gray-dark-5 p-2">
+          <Text className="text-title1 font-sans text-main-dark-4">Typography</Text>
+          <Text className="text-title1 font-sans text-white-1">Title 1</Text>
         </View>
-        <Text className="text-base text-white-1 p-2 text-center bg-main-1-light">Light theme</Text>
-        <View className="flex flex-col h-screen bg-gray-1-light p-2">
-          <Text className="text-base font-sans text-main-1-light">Typography</Text>
-          <Text className="text-xs font-sans text-black-1">Font (xs)</Text>
-          <Text className="text-sm font-sans text-black-1">Font (sm)</Text>
-          <Text className="text-base font-sans text-black-1">Font (base)</Text>
-          <Text className="text-lg font-sans text-black-1">Font (lg)</Text>
-          <Text className="text-xl font-sans text-black-1">Font (xl)</Text>
-          <Text className="text-2xl font-sans text-black-1">Font (2xl)</Text>
-          <Text className="text-3xl font-sans text-black-1">Font (3xl)</Text>
-          <Text className="text-4xl font-sans text-black-1">Font (4xl)</Text>
-          <Text className="text-5xl font-sans text-black-1">Font (5xl)</Text>
-          <Text className="text-6xl font-sans text-black-1">Font (6xl)</Text>
-          <Text className="text-7xl font-sans text-black-1">Font (7xl)</Text>
-          <Text className="text-8xl font-sans text-black-1">Font (8xl)</Text>
-          <Text className="text-9xl font-sans text-black-1">Font (9xl)</Text>
+        <Text className="text-title-1 text-white-1 p-2 text-center bg-main-light-5">Light theme</Text>
+        <View className="flex flex-col h-screen bg-white-1 p-2">
+          <Text className="text-title1 font-sans text-main-light-4">Typography</Text>
+          <Text className="text-title1 font-sans text-black-5">Title 1</Text>
         </View>
         <StatusBar style="auto" />
       </ScrollView>
