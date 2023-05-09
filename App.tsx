@@ -15,8 +15,8 @@ export default function App() {
   }
 
   return (
-    <SafeAreaView>
-      <ScrollView>
+    <SafeAreaView className="w-full">
+      <ScrollView className="w-full">
         <Text className="text-base text-white-1 p-2 text-center bg-main-dark-5">Dark theme</Text>
         <View className="flex flex-col h-screen bg-gray-dark-5 p-2">
           <Text className="text-title1 font-sans text-main-dark-4">Typography</Text>
